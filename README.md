@@ -16,3 +16,5 @@ In broad terms, sentiment analysis requires five distinctive steps:
 5. Testing the classifier on some test paragraph/ series of words<br/>
 
 As a team of four, I, along with three of my college mates (Asmita Subedi, Mohan Singh Bomrel and Yashin Shekh), decided to carry out sentiment analysis of the news posted online in one of the popular news daily of Nepal, The Kathmandu Post (http://kathmandupost.ekantipur.com/). We wanted to build a classifier which could categorize a particular news article as good or bad, meaning having positive sentiment or negative sentiment respectively. All four of us worked together throughout the development process with Miss Subedi focused on front end development, Mr. Shekh focused on web scraping / data extraction, and I, along with Mr. Bomrel, focused on Research and Text Analysis.
+
+Related Blog: http://rubyshrestha.com.np/2018/03/31/sentiment-analysis/

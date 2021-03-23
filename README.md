@@ -1,12 +1,13 @@
 # Sentiment-Analysis--News-Data
-Team project in the domain of sentiment analysis
+Prototype developed during 36 hr hackathon
 
 <b>Team Members: <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh
 
 <b>Background:</b>
 
-Sentiment Analysis is a fun task to do. It is making sense of the emotional tone or characteristic of any piece of subjective information, be it in any form of media. One of the most popular versions of sentiment analysis is classifying the collective series of words into one of the two classes of sentiments: positive and negative. 
+Sentiment Analysis is a fun task to do. It is making sense of the emotional tone or characteristic of any piece of subjective information, be it in any form of media. One of the most popular versions of sentiment analysis is classifying the collective series of words into one of the three classes of sentiments: positive, negative or neutral.
+ 
 In broad terms, sentiment analysis requires five distinctive steps:
 
 1. Collection of subjective information (multiple paragraphs, to be specific) for finding pattern in positive and negative sentiments <br/>
@@ -15,6 +16,6 @@ In broad terms, sentiment analysis requires five distinctive steps:
 4. Training the classifier<br/>
 5. Testing the classifier on some test paragraph/ series of words<br/>
 
-As a team of four, I, along with three of my college mates (Asmita Subedi, Mohan Singh Bomrel and Yashin Shekh), decided to carry out sentiment analysis of the news posted online in one of the popular news daily of Nepal, The Kathmandu Post (http://kathmandupost.ekantipur.com/). We wanted to build a classifier which could categorize a particular news article as good or bad, meaning having positive sentiment or negative sentiment respectively. All four of us worked together throughout the development process with Miss Subedi focused on front end development, Mr. Shekh focused on web scraping / data extraction, and I, along with Mr. Bomrel, focused on Research and Text Analysis.
+As a team of four, I, along with three of my friends (Asmita Subedi, Mohan Singh Bomrel and Yashin Shekh), decided to carry out sentiment analysis of the news posted online in one of the popular news daily of Nepal, The Kathmandu Post (http://kathmandupost.ekantipur.com/). We wanted to build a classifier which could categorize a particular news article as good or bad, meaning having positive sentiment or negative sentiment respectively. All four of us worked together throughout the development process with Mr. Shekh focused on web scraping / data extraction, Miss Subedi focused on front end and data preparation, and I, along with Mr. Bomrel, focused on Research and Text Analysis.
 
-Related Blog: http://rubyshrestha.com.np/2018/03/31/sentiment-analysis/
+Related Blog: http://rubyshrestha.com.np/2019/03/news-data-sentiment-analysis

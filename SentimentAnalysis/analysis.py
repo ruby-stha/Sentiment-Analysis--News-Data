@@ -37,18 +37,19 @@ print(df['news'])
 stop = stopwords.words('english')
 def remove_stop_words(text):
        return [w for w in text.split() if w not in stop]
-porter = PorterStemmer()
+
 df['news']=df['news'].apply(remove_stop_words)
 print(df['news'])
 
 val=0
+porter = PorterStemmer()
 for x in df['news']:
-               df['news'][val] = [porter.stem(word) for word in x]
-               text=""
-               for word in df['news'][val]:
-                       text=text + word + " "
-               df['news'][val]=text
-               val+=1
+    df['news'][val] = [porter.stem(word) for word in x]
+    text=""
+    for word in df['news'][val]:
+        text=text + word + " "
+    df['news'][val]=text
+    val+=1
 print(df['news'])
 
 #testing usage of CountVextorizer and Tfidfransformer which computes tfidf
@@ -63,7 +64,7 @@ np.set_printoptions(precision=2)
 print(tfidf.fit_transform(count.fit_transform(df['news'])).toarray())
 
 #Applying logistic regression classifier
-text_clf = Pipeline([('vect', CountVectorizer()),('tfidf', TfidfTransformer()),('clf', LogisticRegression()),])
+text_clf = Pipeline([('vect', CountVectorizer()),('tfidf', TfidfTransformer()),('clf', LogisticRegression())])
 
 _ = text_clf.fit(df['news'],df['sentiment'])
 

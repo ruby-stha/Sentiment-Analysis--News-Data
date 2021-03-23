@@ -1,23 +1,20 @@
 #importing necessary modules
-import pandas as pd
-from flask import Flask
-import os
 import re
-import numpy as np
+
 import nltk
+import numpy as np
+import pandas as pd
+from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from nltk.stem.porter import PorterStemmer
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
 
 #downloading required stop words from nltk and importing the stopwords from nltk corpus
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 
 #using flask for front end hence importing the render_template for rendering the html files
-from flask import render_template
 
 #df is the dataframe which is training set panda object
 df = pd.DataFrame()
@@ -25,8 +22,8 @@ df = pd.DataFrame()
 tf = pd.DataFrame()
 
 #creating objects
-df = pd.read_csv('./news_data.csv')
-tf = pd.read_csv('./testData.csv')
+df = pd.read_csv('/home/rubyshrestha/sentiment/Sentiment-Analysis--News-Data/SentimentAnalysis/news_data.csv')
+tf = pd.read_csv('/home/rubyshrestha/sentiment/Sentiment-Analysis--News-Data/SentimentAnalysis/testData.csv')
 
 #preprocessing training set text by removing non-words from training set text
 def preprocessor(text):
@@ -79,8 +76,8 @@ good=[]
 bad=[]
 ind=0
 
-home=np.mean(predicted == tf['sentiment'])
-print("Accuracy: "+ str(home))
+accuracyPercent=np.mean(predicted == tf['sentiment'])
+print("Accuracy: "+ str(accuracyPercent))
 for p in predicted:
 	if p==0:
 		bad.append(tf['news'][ind])
@@ -98,7 +95,7 @@ print(bad)
 
 
 def myfunction():
-	return bad, good
+	return bad, good, accuracyPercent
 
 
 

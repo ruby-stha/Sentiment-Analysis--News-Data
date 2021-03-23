@@ -1,17 +1,18 @@
-import test
-from flask import Flask, Response
+from flask import Flask
 from flask import render_template
-from flask import url_for
+
+import analysis
 
 app = Flask(__name__)
 
-x = test.myfunction()
+x = analysis.myfunction()
 g = x[1]
 b = x[0]
+acc= round(x[2],2)*100
 
 @app.route("/")
 def hello():
-	return render_template('index.html')
+	return render_template('index.html', acc=acc)
 
 @app.route("/good")
 def good():

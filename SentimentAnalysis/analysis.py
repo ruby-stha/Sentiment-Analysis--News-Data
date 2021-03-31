@@ -9,6 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
+from sklearn import metrics
 
 #downloading required stop words from nltk and importing the stopwords from nltk corpus
 nltk.download('stopwords')
@@ -63,8 +64,8 @@ tfidf = TfidfTransformer()
 np.set_printoptions(precision=2)
 print(tfidf.fit_transform(count.fit_transform(df['news'])).toarray())
 
-#Applying logistic regression classifier
-text_clf = Pipeline([('vect', CountVectorizer()),('tfidf', TfidfTransformer()),('clf', LogisticRegression())])
+#Applying logistic regression classifier with L2 regularization and λ=3)
+text_clf = Pipeline([('vect', CountVectorizer()),('tfidf', TfidfTransformer()),('clf', LogisticRegression(C=3))])
 
 _ = text_clf.fit(df['news'],df['sentiment'])
 
@@ -79,6 +80,10 @@ ind=0
 
 accuracyPercent=np.mean(predicted == tf['sentiment'])
 print("Accuracy: "+ str(accuracyPercent))
+
+print(":::Confusion Matrix:::")
+print(metrics.confusion_matrix(tf['sentiment'],predicted))
+
 for p in predicted:
 	if p==0:
 		bad.append(tf['news'][ind])
@@ -88,11 +93,6 @@ for p in predicted:
 		ind+=1
 	
 
-print("Good News")
-print(good)
-
-print("Bad News")
-print(bad)
 
 
 def myfunction():

@@ -1,5 +1,5 @@
 # Sentiment-Analysis--News-Data
-Prototype developed during 24 hr hackathon
+Prototype developed during 24 hr hackathon, year: 2018
 
 <b>Team Members: <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh

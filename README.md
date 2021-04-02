@@ -1,5 +1,5 @@
 # Sentiment-Analysis--News-Data
-Prototype developed during 36 hr hackathon
+Prototype developed during 24 hr hackathon
 
 <b>Team Members: <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh
@@ -18,4 +18,4 @@ In broad terms, sentiment analysis requires five distinctive steps:
 
 As a team of four, I, along with three of my friends (Asmita Subedi, Mohan Singh Bomrel and Yashin Shekh), decided to carry out sentiment analysis of the news posted online in one of the popular news daily of Nepal, The Kathmandu Post (http://kathmandupost.ekantipur.com/). We wanted to build a classifier which could categorize a particular news article as good or bad, meaning having positive sentiment or negative sentiment respectively. All four of us worked together throughout the development process with Mr. Shekh focused on web scraping / data extraction, Miss Subedi focused on front end and data preparation, and I, along with Mr. Bomrel, focused on Research and Text Analysis.
 
-Related Blog: http://rubyshrestha.com.np/2019/03/news-data-sentiment-analysis
+<b>Note: </b> Some improvements have been made in the code over time.

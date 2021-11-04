@@ -1,7 +1,7 @@
 # Sentiment-Analysis--News-Data
 The prototype was initially developed during 24 hr hackathon, year: 2018 by the following team members.
 
-<b>Team Members: <br/></b>
+<b>Team Members: (in alphabetical order) <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh
 
 <b>Background:</b>

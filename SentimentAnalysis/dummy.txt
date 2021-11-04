@@ -1,5 +1,5 @@
 news,sentiment
-this is bad news. I killed ruby.,0 
+this is bad news. I killed someone.,0 
 this is asmita subedi. she is ready to get married.She is happy,1
 we will feel bad,0
 he is nice boy,1
@@ -40,7 +40,6 @@ there seems to be some confusion about which system does what.,0
 shoplifting was a serious crime.,0
 it often seemed as if the family had been cursed.,0
 his life was in danger.,0
-
 their happiness made Anne feel even more miserable,0
 she is seeking damages on allegations of misrepresentation,0
 a warning to men harassing women at work,0

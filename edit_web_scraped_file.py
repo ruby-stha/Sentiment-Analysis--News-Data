@@ -1,3 +1,5 @@
+# Updating scraped news data to remove unnecessary textual units
+
 f = open('hellotxt.csv','r')
 filedata = f.read()
 f.close()

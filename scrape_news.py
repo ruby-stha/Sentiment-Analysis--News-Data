@@ -1,3 +1,4 @@
+# Scraping e-news data from the Kathmandu Post, famous e-news site of Nepal
 import urllib.request
 from bs4 import BeautifulSoup
 import csv
@@ -20,28 +21,11 @@ for link in soup.find_all('a'):
 
 
 new_title.append(list(set(news_link)))
-# print(new_title)
-# for i in range(len(new_title[0])):
-#    print(new_title[0][i])
 
-
-# print(new_title)
 for i in range(70):
     with urllib.request.urlopen(new_title[0][i]) as url:
         s = url.read()
     soup = BeautifulSoup(s, 'html.parser')
-
-    # for link in soup.find_all('h1'):
-    #     # print(link.string)
-    #     titles.append(link.string)
-    #
-    #
-    #     # print(titles[i].string)
-    #
-    #     # with open('mycsv.txt', "w") as output:
-    #     #     writer = csv.writer(output, lineterminator='\n')
-    #     #     writer.writerow(titles[i].string)
-
 
     for link in soup.find_all('p'):
         print(link.string)
@@ -57,16 +41,3 @@ for i in range(70):
     target = open("hellotxt.csv", 'a')
     target.write("\n")
     target.close()
-
-
-
-            # with open('hello.txt', "w") as output:
-            #     writer = csv.writer(output, lineterminator='\n')
-            #     writer.writerow(link.string)
-            #     for val in link.string:
-            #         writer.writerow([val])
-
-    # with open('hellotxt.csv','r') as file:
-    #     data = file.readlines()
-    #     for each in data:
-    #         print(each)

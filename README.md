@@ -1,8 +1,10 @@
 # Sentiment-Analysis--News-Data
-The prototype was initially developed during 24 hr hackathon, year: 2018 by the following team members.
+The prototype was initially developed during 24 hr hackathon, year: 2018 by the following team members. 
 
 <b>Team Members: (in alphabetical order) <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh
+
+After the hackathon, I have made some minor improvements over time.
 
 ## Background:
 
@@ -24,7 +26,6 @@ Majority of the news data to work on were collected via web scraping. The data w
 
 After the news data were collected in csv file, each of the news data was provided with sentiments (0 for negative and 1 for positive). With this, a total of 247 data were prepared out of which we used 135 data for training purpose and 112 for testing purpose (that is, around 55% for training and 45% for testing).
 
+## To Read Further
 I have briefed on Data Preprocessing, Feature Extraction and Training/Classification in my [site](https://ruby-shrestha.000webhostapp.com/news-data-sentiment-analysis/)
 
-## Note:
-I have made some minor improvements over time after the hackathon.

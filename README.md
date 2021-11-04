@@ -4,7 +4,7 @@ The prototype was initially developed during 24 hr hackathon, year: 2018 by the 
 <b>Team Members: (in alphabetical order) <br/></b>
 Asmita Subedi, Mohan Singh Bomrel, Ruby Shrestha and Yashin Shekh
 
-# Background:
+## Background:
 
 Sentiment Analysis is a fun task to do. It is making sense of the emotional tone or characteristic of any piece of subjective information, be it in any form of media. One of the most popular versions of sentiment analysis is classifying the collective series of words into one of the three classes of sentiments: positive, negative or neutral.
  
@@ -18,7 +18,7 @@ In broad terms, sentiment analysis requires five distinctive steps:
 
 As a team of four, I, along with three of my friends (Asmita Subedi, Mohan Singh Bomrel and Yashin Shekh), decided to carry out sentiment analysis of the news posted online in one of the popular news daily of Nepal, [The Kathmandu Post](http://kathmandupost.ekantipur.com/). We wanted to build a classifier which could categorize a particular news article as good or bad, meaning having positive sentiment or negative sentiment respectively. All four of us worked together throughout the development process with Mr. Shekh focused on web scraping / data extraction, Miss Subedi focused on front end and data preparation, and I, along with Mr. Bomrel, focused on Research and Text Analysis.
 
-# Data Collection and Preparation:
+## Data Collection and Preparation:
 
 Majority of the news data to work on were collected via web scraping. The data were either news headlines or around 150 words news content extracted from The Kathmandu Post. In addition to such extracted news data, around 60 training data were self-created examples of positive/negative sentences most likely to encounter in news articles. The example positive and negative sentences were inserted in the data so that our classifier would have an easy time understanding the sentence sentiment (+/-).
 
@@ -26,4 +26,5 @@ After the news data were collected in csv file, each of the news data was provid
 
 I have briefed on Data Preprocessing, Feature Extraction and Training/Classification in my [site](https://ruby-shrestha.000webhostapp.com/news-data-sentiment-analysis/)
 
-<b>Note: </b> I have made some minor improvements over time after the hackathon.
+## Note:
+I have made some minor improvements over time after the hackathon.

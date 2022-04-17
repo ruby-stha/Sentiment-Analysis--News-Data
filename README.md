@@ -27,4 +27,6 @@ Majority of the news data to work on were collected via web scraping. The data w
 After the news data were collected in csv file, each of the news data was provided with sentiments (0 for negative and 1 for positive). With this, a total of 247 data were prepared out of which we used 135 data for training purpose and 112 for testing purpose (that is, around 55% for training and 45% for testing).
 
 ## To Read Further
-I have briefed on Data Preprocessing, Feature Extraction and Training/Classification in my [site](https://ruby-shrestha.000webhostapp.com/news-data-sentiment-analysis/).
+I have provided details on Data Preprocessing, Feature Extraction and Training/Classification in the document [here](https://drive.google.com/file/d/1qn3fvIhRQC94aJLlcAYJqf_aBSoRu2CJ/view?usp=sharing).
+
+Details on improvements made to the model have been described [here](https://drive.google.com/file/d/19jJUUcy8cKpVfjIYMA7HiMDgAeTXzTOe/view?usp=sharing).
